@@ -1,0 +1,24 @@
+
+//function Defination
+function display() : void
+{
+    console.log("Monday");
+    console.log("Tues");
+    console.log("Wens");
+    console.log("Thurs");
+    console.log("Frid");
+    console.log("Sat");
+    console.log("Sun");
+}
+
+//function call
+
+display();
+
+/**Monday
+Tues
+Wens
+Thurs
+Frid
+Sat
+Sun */
