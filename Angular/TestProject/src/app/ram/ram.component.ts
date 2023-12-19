@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './ram.component.html',
   styleUrl: './ram.component.css'
 })
-export class RamComponent {
+export class RamComponent 
+{
+   public name = "Ramoji";
 
+   public display()
+   {
+    return "Ram is Back";
+   }
+   
 }
