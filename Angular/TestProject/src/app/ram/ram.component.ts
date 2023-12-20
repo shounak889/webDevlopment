@@ -9,27 +9,5 @@ import { Component } from '@angular/core';
 })
 export class RamComponent 
 {
-   public name : string = "";
-
-   public display()
-   {
-    this.name = "ddwdwdwdd";
-   }
-
-   public dis()
-   {
-    return  this.name = "ojasdd";
-   }
-
-   public tat()
-   {
-    console.log("Tat is clicked");
-   }
-
-   public Ramse(val1 : any)
-   {
-     console.log(val1);
-   }
-
-
+  
 }
