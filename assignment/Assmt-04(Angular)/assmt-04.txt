@@ -12,4 +12,4 @@ To do this remove whole code from app.component.html and write statements to add
 4. Create Angular application which creates one Custom component named as Demo. Render that Demo component from app component.
 To do this use below command
 ng generate component Demo
-Add the selector of Demo component into app component.
+Add the selector of Demo component into app component. 
