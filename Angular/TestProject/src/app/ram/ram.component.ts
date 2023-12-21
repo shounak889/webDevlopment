@@ -9,5 +9,8 @@ import { Component } from '@angular/core';
 })
 export class RamComponent 
 {
-  
+  public myColor = "purple";
+
+  public  veg = true;
+
 }
