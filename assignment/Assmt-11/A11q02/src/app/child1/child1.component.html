@@ -1,0 +1,14 @@
+<!-- <p>child1 works!</p> -->
+<!-- <h2 *ngIf = "ans">
+</h2> -->
+
+
+<div *ngIf = "ans ; then ifblock ; else elseblock"></div>
+
+<ng-template #ifblock>
+    <h2>Typed number is PRIME</h2>
+</ng-template>
+
+<ng-template #elseblock>
+    <h2> Typed number is NON PRIME </h2>
+</ng-template>
