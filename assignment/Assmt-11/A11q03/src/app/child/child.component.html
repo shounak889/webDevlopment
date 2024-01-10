@@ -1,0 +1,14 @@
+<h1>Entered number is {{num}}</h1>
+
+<div *ngIf = "numT ; then ifblock ; else elseblock"></div> 
+
+<ng-template #ifblock>
+    <h2>PRIME Number</h2>
+</ng-template>
+
+<ng-template #elseblock>
+    <h2>NOT Prime</h2>
+</ng-template>
+
+<h1>Entered string is {{s1}}</h1>
+<h2>Capital letters in string = {{cap}}</h2>
