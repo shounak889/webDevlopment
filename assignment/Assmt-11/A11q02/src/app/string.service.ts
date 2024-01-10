@@ -6,4 +6,24 @@ import { Injectable } from '@angular/core';
 export class StringService {
 
   constructor() { }
+
+  countCapitol(val1 : string) : number
+  {
+    var cap1: number = 0;
+    var i : number = 0;
+
+    while(i < val1.length)
+    {
+      if(val1[i] >= "A" && val1[i] <="Z")
+
+      {
+        cap1++;
+      }
+
+      i++;
+      
+    }
+
+    return cap1;
+  }
 }

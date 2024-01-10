@@ -13,7 +13,7 @@ import { NumberService } from '../number.service';
 export class Child1Component {
   public ans : boolean = false;
 
-  num = 97;
+  num = 100;
 
   constructor(private obj1 : NumberService)
   {
