@@ -5,5 +5,5 @@ In Technology route display names of technologies as Angular, Node JS, Android, 
  of route at the end of URL manually.
 2. Create the similar application (Question 1) as above and add navigation tabs to navigate between that two routes.
 3. Create the similar application (Question 2) as above and add navigation tabs to navigate between that two routes. 
-Add one another route which displays "Wrong choice when user gives wrong route name. 
+Add one another route which displays "Wrong choicecomc when user gives wrong route name. 
 Display Technologies route as a default route which gets automatically displayed when we open the application.
