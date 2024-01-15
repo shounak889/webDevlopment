@@ -1,0 +1,56 @@
+<!-- container-fluid is a bootstrap container which is used so that the below contain could spread and 
+  fill the whole page -->
+<div class = "container-fluid">
+  <h2>Marvellous Login form</h2>
+
+  <!-- adding form group  -->
+  <form [formGroup] = "MarvellousForm">
+    <!-- form group has form contols we can add as many contolls as we want -->
+    <!-- it is under form group -->
+    <div class="form-group">
+      <!-- iable means name above the field -->
+      <label>User Name</label>
+
+      <!-- type of the text yout are entering, class is form-control it is bootstrap, formControlName aslo bootstrap
+        it askes which name in .ts  you want to control this element-->
+
+      <!-- <input type="text" class="form-control" formControlName="username"> -->
+      <input [class.is-invalid] = "MarvellousForm.get('username')?.invalid" type="text" class="form-control" formControlName = "username">
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <!-- here type is password so when you enter you will see block dots insted of text as it is password -->
+      <!-- <input type="password" class="form-control" formControlName="password"> -->
+      <input [class.is-invalid] = "MarvellousForm.get('password')?.invalid " type="password" class="form-control" formControlName ="password">
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="password" class="form-control" formContrlName="confirmPass">
+    </div>
+
+    <!-- adding a nested form  -->
+    <!-- formGroupName is a bootstrap thing -->
+    <div formGroupName = "MarvellousClass">
+      <div class="form-group">
+        <label>Batch Name</label>
+        <input type="text" class="form-control" formControlName="batch">
+      </div>
+
+      <div class="form-group">
+        <label>Fees</label>
+        <input type="text" class="form-control" formControlName="fees">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+
+    <button type="submit" class="btn btn-primary" (click)="setData()">set Values</button>
+
+    <button type="submit" class="btn btn-primary" (click)="clrData()">clear Values</button>
+  </form>
+
+  {{MarvellousForm.value | json}}
+  
+</div>
