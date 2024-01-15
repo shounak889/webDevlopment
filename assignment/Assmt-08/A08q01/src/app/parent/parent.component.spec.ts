@@ -8,7 +8,7 @@ describe('ParentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ParentComponent]
+      imports: [ParentComponent]
     })
     .compileComponents();
     

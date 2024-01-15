@@ -1,26 +1,20 @@
-import { Component, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
-
+import { Component, EventEmitter, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-child',
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './child.component.html',
   styleUrl: './child.component.css'
 })
 export class ChildComponent {
-  public t1:string = "";
 
-
-  @Output() public myEvent = new EventEmitter();
-
-  public submit()
+  @Output() public sendHim = new EventEmitter();
+  public name:any;
+  
+  public fun1()
   {
-    // this.myEvent.emit(this.t1);
-    this.myEvent.emit("Ye bababbab");
+    this.sendHim.emit(this.name);
   }
 
-  constructor(){}
-
-  ngOnInit(){
-
-  }
 }

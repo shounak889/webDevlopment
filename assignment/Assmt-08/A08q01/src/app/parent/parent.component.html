@@ -1,4 +1,5 @@
 <!-- <p>parent works!</p> -->
-<app-child (myEvent) = "msg = $event"></app-child>
 
-<h2>{{msg}}</h2>
+<app-child (sendHim)="s1=$event"></app-child>
+
+<h2>Your Infomation : {{s1}}</h2>
