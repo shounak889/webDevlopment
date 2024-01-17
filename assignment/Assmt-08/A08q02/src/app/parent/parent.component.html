@@ -1,0 +1,9 @@
+<!-- <p>parent works!</p> -->
+
+<!-- child to parent -->
+<app-child [ss1] = "msgP" (ch1)="msg=$event"></app-child>
+
+<!-- parent to child -->
+<!-- <app-child [ss1] = "msgP"></app-child> -->
+
+<h2>In Parent : {{msg}}</h2>   
