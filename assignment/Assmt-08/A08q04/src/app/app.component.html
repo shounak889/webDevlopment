@@ -1,0 +1,20 @@
+<h2>Enter the name</h2>
+
+<input [(ngModel)] = "name" type="text">
+
+<h2> Entered data is : {{name}}</h2>
+
+<h3>Length of entered data is {{funLen(name)}}{{len}}</h3>
+
+<h2>Below one is made without using ngModel</h2>
+
+<!-- (input) if any cahnge happens in input field it calls onInputChange by passing event (something is happening) 
+  target(it points to box or button i.e. where it is happening) value (characters in the box) -->
+  
+<input [value]="myValue" (input)="onInputChange($event.target.value)">
+
+<h2> Entered data is : {{myValue}}</h2>
+
+<h3>Length of entered data is {{funLen(myValue)}}{{len}}</h3>
+    
+<router-outlet></router-outlet>
