@@ -1,0 +1,30 @@
+
+<h1>Inside Demo Component</h1>
+
+<h2>{{name}}</h2>
+
+<h2>{{name | lowercase}}</h2>
+
+<h2>{{name | titlecase}}</h2>
+
+<!-- slice off first 10 characters -->
+<h2>{{name | slice : 10}}</h2>
+
+<!-- 012.3 -->
+<h1>{{value | number : '3.1-1'}}</h1>
+
+<h2>{{today}}</h2>
+
+<h2>{{today | date}}</h2>
+
+<h2>{{today | date : 'shortDate'}}</h2>
+
+<h2>{{today | date : 'shortTime'}}</h2>
+
+
+<!-- [object Object] -->
+<h2>{{book}}</h2>
+
+<!-- { "name": "Learning Angular", "Author": "James Peter", "Price": 322 } -->
+<h2>{{book | json}}</h2>
+
