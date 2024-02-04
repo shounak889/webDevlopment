@@ -1,5 +1,6 @@
 
-<h1>Inside Demo Component</h1>
+<h1 style="color: red;"> Just pipe </h1>
+
 
 <h2>{{name}}</h2>
 
@@ -9,6 +10,9 @@
 
 <!-- slice off first 10 characters -->
 <h2>{{name | slice : 10}}</h2>
+
+<h2>{{name | slice : 10:14}}</h2>
+
 
 <!-- 012.3 -->
 <h1>{{value | number : '3.1-1'}}</h1>
@@ -27,4 +31,8 @@
 
 <!-- { "name": "Learning Angular", "Author": "James Peter", "Price": 322 } -->
 <h2>{{book | json}}</h2>
+
+
+<!-- ₹322.00 -->
+<h2>{{book.Price | currency : 'INR'}}</h2>
 
