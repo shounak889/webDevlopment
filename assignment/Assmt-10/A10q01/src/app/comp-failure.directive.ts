@@ -11,12 +11,14 @@ export class CompFailureDirective {
 
   @HostListener ('mouseenter') onmouseenter()
   {
-    this.obj.nativeElement.style.backgroundColor = 'green';
+    //this.obj.nativeElement.style.backgroundColor = 'green';
+    this.obj.nativeElement.style.color = 'green';
   }
 
   @HostListener ('mouseleave') onmouseleave()
   {
-    this.obj.nativeElement.style.backgroundColor = 'white';
+    //this.obj.nativeElement.style.backgroundColor = 'white';
+    this.obj.nativeElement.style.color = 'black';
   }
 
 }

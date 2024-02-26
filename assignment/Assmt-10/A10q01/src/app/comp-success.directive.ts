@@ -10,11 +10,13 @@ export class CompSuccessDirective {
 
   @HostListener ('mouseenter') onmouseenter()
   {
-    this.obj.nativeElement.style.backgroundColor = 'red';
+    //this.obj.nativeElement.style.backgroundColor = 'red';
+    this.obj.nativeElement.style.color = 'red';
   }
 
   @HostListener ('mouseleave') onmouseleave()
   {
-    this.obj.nativeElement.style.backgroundColor = 'white';
+    //this.obj.nativeElement.style.backgroundColor = 'white';
+    this.obj.nativeElement.style.color = 'black';
   }
 }
